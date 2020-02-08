@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/my_tasks_name"
+        android:id="@+id/my_task_item"
+        android:icon="@drawable/ic_format_list_bulleted_black_24dp"/>
+    <item android:title="@string/my_day_name"
+        android:id="@+id/my_day_item"
+        android:icon="@drawable/ic_view_day_black_24dp"/>
+    <item android:title="@string/my_statistic_name"
+        android:id="@+id/my_statistic_item"
+        android:icon="@drawable/ic_timeline_black_24dp"
+        />
+</menu>

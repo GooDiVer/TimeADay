@@ -7,4 +7,8 @@
         android:id="@+id/myTasksFragment"
         android:name="mytasks.MyTaskFragment"
         android:label="MyTasksFragment" />
+    <fragment
+        android:id="@+id/addToTasksFragment"
+        android:name="addmytasks.AddToTasksFragment"
+        android:label="AddToTasksFragment" />
 </navigation>

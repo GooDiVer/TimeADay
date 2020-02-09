@@ -3,4 +3,6 @@
     <string name="my_tasks_name">Мои дела</string>
     <string name="my_day_name">Мой день</string>
     <string name="my_statistic_name">Моя статистика</string>
+    <string name="add">добавить</string>
+    <string name="add_your_important_task">Введи важное регулярное дело</string>
 </resources>

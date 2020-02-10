@@ -23,9 +23,7 @@ class MyTaskAdapter() : ListAdapter<MyTask, MyTaskAdapter.ViewHolder>(MyTaskDiff
     class ViewHolder private constructor(val binding: ListMyTaskItemBinding): RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: MyTask) {
-            binding.myTaskTitle.text = item.title
-            binding.clearActionTimeText.text = (item.clearActionTime / 3600000).toString()
-            binding.prepareToActionTime.text = (item.prepareTime / 600000).toString()
+            binding.mystask = item
         }
 
         companion object {

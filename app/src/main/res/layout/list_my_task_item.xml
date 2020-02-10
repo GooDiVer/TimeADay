@@ -5,6 +5,10 @@
 
     <data>
 
+        <variable
+            name="mystask"
+            type="database.MyTask" />
+
     </data>
 
     <androidx.cardview.widget.CardView
@@ -17,8 +21,7 @@
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/dark_back_color"
-            >
+            android:background="@color/dark_back_color">
 
             <TextView
                 android:id="@+id/myTaskTitle"
@@ -28,15 +31,17 @@
                 app:layout_constraintEnd_toStartOf="@+id/issueButton"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="Title" />
+                app:titleTextView="@{mystask}"
+                tools:text="Заголовок" />
 
             <TextView
                 android:id="@+id/clearActionTimeText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/colorBackBlue"
+                android:background="@drawable/rounded_corner_blue"
                 android:padding="4dp"
                 android:textColor="@android:color/white"
+                app:clearActionNumericTime="@{mystask}"
                 app:layout_constraintEnd_toStartOf="@+id/prepareToActionTime"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="@+id/myTaskTitle"
@@ -49,13 +54,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="200dp"
                 android:layout_marginRight="200dp"
-                android:background="@color/colorAccent"
+                android:background="@drawable/rounded_corner_red"
                 android:padding="4dp"
                 android:textColor="@android:color/white"
                 app:layout_constraintEnd_toEndOf="@+id/myTaskTitle"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/clearActionTimeText"
                 app:layout_constraintTop_toTopOf="@+id/moreButton"
+                app:prepareNumericTime="@{mystask}"
                 tools:text="10мин" />
 
             <androidx.appcompat.widget.AppCompatImageButton
